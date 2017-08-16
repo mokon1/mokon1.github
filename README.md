@@ -1,2 +1,4 @@
 # mokon1.github.io
-in progress ...
+This website is in progress.
+
+My Github: github.com/mokon1
