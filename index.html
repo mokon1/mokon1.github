@@ -5,17 +5,18 @@
     <title>Michalina Okoń</title>
     <meta name="viewport" content="width=500, initial-scale=1.0">
     <link rel="stylesheet" href ="css/main.css">
-    <script src="js/script.js" async></script>
-    <!-- to do js & ...-->
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <!--   <script src="js/script.js" async></script>
+    to do js & ...-->
 </head>
 <body>
     <div class="container">
         <!-- ==================== HEADER ==================== -->
         <header>
             <nav class="menu">
-                <!--<div class="author">
-                     <img src="pictures/author.jpg" class="author"/>
-                </div>-->
                 <div class="author">
                      <p class="largeText">Michalina Okoń</p>
                      <p>junior front-end developer</p>
@@ -43,17 +44,17 @@
         </header>
         <!-- ==================== MAIN ==================== -->
         <main>
-            <section id="information" class="section-information information">
-                <div class="author-pic">
+            <section id="information" class="section-information">
+                <div class="author-information">
                      <img src="pictures/author.jpg" />
-                     <div class="author-information">
-                         <p class="author-information-bg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu malesuada dui. Donec suscipit et est eu hendrerit. Quisque varius vulputate diam quis tempus. Proin iaculis magna sit amet nisi aliquam, quis ullamcorper erat semper.  </p>
+                     <div class="author-text">
+                         <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu malesuada dui. Donec suscipit et est eu hendrerit. Quisque varius vulputate diam quis tempus. Proin iaculis magna sit amet nisi aliquam, quis ullamcorper erat semper.</p>
                      </div>
                 </div>
             </section>
-            <section id="edu" class="section-edu edu">
-                <div class= "fortyPercent">
+            <section id="edu" class="section-edu">
+                <div class= "oneFour">
                     <div class="left">
                         <p>2017</p>
                     </div>
@@ -61,30 +62,30 @@
                         <p>I try to improve my skills and learn new things. Nowadays I read a lot about front-end and do on-line courses. I do some projects, which show my skills.</p>
                     </div>
                 </div> 
-                <div class= "fifteenPercent">
+                <div class= "oneFour">
                     <div class="left"><p>2017</p></div>
                     <div class="right">
-                        <p>Coders Lab Bootcamp, Become Front End Developer</p>
-                        <div class="school"><img src="pictures/coders.jpg" class="codersLab center"/></div>
+                        <p>Coders Lab Bootcamp <br> Become Front End Developer</p>
+                        <div><img src="pictures/coders.jpg" class="codersLab"/></div>
                     </div>    
                 </div>   
-                <div class="fifteenPercent">
+                <div class="oneFour">
                     <div class="left"><p>2011-2013 </p></div>
                     <div class="right">
                         <p> University of Technology in Wrocław, First level studies: Management <br>
                         </p>
-                        <div class="school"><img src="pictures/pwr.jpg" class="pwr"/></div>
+                        <div><img src="pictures/pwr.jpg" class="pwr"/></div>
                     </div>
                 </div>
-                <div class="fifteenPercent">
+                <div class="oneFour">
                     <div class="left"><p>2007-2010 </p></div>
                     <div class="right">
                         <p>University of Economics in Wrocław,  Second level studies: Finance and accounting <br></p>
-                        <div class="school"><img src="pictures/ue.jpg" class="ue"/></div>
+                        <div><img src="pictures/ue.jpg" class="ue"/></div>
                     </div>
                 </div>                 
             </section>
-            <section id="skills" class="section-skills">
+            <!--<section id="skills" class="section-skills">
                 <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu malesuada dui.</p></div>
                 <div class="programming">
                     <div><p>HTML5</p></div>
@@ -105,7 +106,6 @@
                 </div>
             </section>
             <section id="work" class="work">
-                <div class= "work-container">
                     <div class="social-icons">
                         <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu malesuada dui.</p>
                         <div class="icons-img">
@@ -117,7 +117,6 @@
                         <div><img src="pictures/bars.jpg" alt="bars"></div>
                         <div><img src="pictures/grid.jpg" alt="grid"></div>
                     </div>
-                </div>
                 </div>
             </section>
             <section id="contact" class="section-contact">
@@ -139,16 +138,14 @@
                     </p>
                 </div>    
             </section>
-        </main>
+        </main> -->
          <!-- ==================== FOOTER ==================== -->
         <footer>
-            <aside>
-                <div class="social-icons">
-                    <a href="https://github.com/mokon1" target="_blank" alt="github"><img src="pictures/git.jpg" class="icons"/></a>
-                    <a href="https://github.com/mokon1" target="_blank"><img src="pictures/in.jpg" alt="linkedin"  class="icons"/></a>
-                </div>
-                <p class="inf-bottom">Michalina Okoń, Wrocław 2017</p>
-            </aside>
+            <div class="social-icons">
+                <a href="https://github.com/mokon1" target="_blank" alt="github"><img src="pictures/git.jpg" class="icons"/></a>
+                <a href="https://github.com/mokon1" target="_blank"><img src="pictures/in.jpg" alt="linkedin"  class="icons"/></a>
+            </div>
+            <p class="inf-bottom">Michalina Okoń, Wrocław 2017</p>
         </footer>
     </div>
 </body>

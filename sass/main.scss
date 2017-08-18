@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 18px;
+}
+.container{
+    margin: 0 auto;
+    padding: 1%;
+    width: 100vw;
+}
+header, nav, main, section, footer{
+    width: 100vw;
+    margin: 0 auto;
+}
+header, nav{
+    height: 15vh;
+    background-color: white;
+    position: relative; //no fixed !
+    z-index: 8;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+.author{
+    flex-grow: 1;
+    padding: 1%;
+    margin-left: 3%;
+    display: inline-block;
+    width: 30vw;
+    .largeText{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #22a389;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+}
+.hamburgerMenu{
+    height: 30px;
+    .hamburgerItem{
+        width: 70px;
+        height: 10px;
+        border: 2px solid black;
+        background-color: grey;
+        border-radius: 10%;
+        margin: 2px;
+        display: block;
+    }
+}
+ul.hamburgerList{
+    display: block;
+    margin-top: 20px;
+    font-weight: 900;
+    li{
+        display: block;
+        margin-left: 8%;
+        font-size: 0.8rem;
+        a{
+            text-decoration: none;
+            color: orangered;
+        }
+    }
+}
+ul.menuList{
+    display: none;
+    height: 15vh;
+    width: 65vw;
+    flex-grow: 1;
+    margin-top: 10vh;
+    li{
+        display: inline-block;
+        margin-left: 5%;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+} 
+/* FOOTER */
+footer{
+    background-color: black;
+    display: flex;
+    font-size: 0.9rem;
+}
+.social-icons{
+    flex-grow: 1;
+    padding: 1%;
+    img.icons{
+        display: inline-block;
+        border-radius: 40%;
+        width: 30px;
+        height: 30px;
+    }
+}
+.inf-bottom{
+    color: white;
+    padding: 3%;
+    
+}
+/* MAIN */
+section{
+    height: 85vh;
+    border-top: 2px dotted grey;
+    border-bottom: 2px dotted grey;
+}
+
+/* INFORMATION */
+.section-information{
+    width: 100vw;
+    background-image: url(../pictures/working.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .author-information{
+        img{
+            border-radius: 10%;
+            width: 86px;
+            height: 112px;
+            margin-left: 3vw;
+            margin-top: 1vh;
+            position: absolute;
+            z-index: 5;
+        }
+        .author-text{
+            margin-top: 40vh;
+            padding: 5vh 10vw;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: -10px -10px 25px black;
+            p{
+                margin-left: 15vw;
+                background-color: black;
+                box-shadow: -10px -10px 25px black;
+                color: white;
+                width: 90%;
+            }
+        }
+    }
+}
+
+/* EDUCATION */
+.section-edu{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    p{
+        font-size: 0.8rem;
+    }
+}
+.oneFour{
+    height: 15vh;
+    flex-grow: 1;
+    width: 90vw;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.left{
+    float: left;
+    margin-left: 2vw;   
+}
+.right{
+    margin-left: 25%;
+    padding-left: 2%;
+    border-left: 2px dotted grey;
+}
+.codersLab{
+    width: 200px;
+    height: 60px;
+    margin-left: 10%;
+}
+.pwr, .ue{
+    height: 60px;
+    width: 50px;
+    margin-left: 30%;
+}
