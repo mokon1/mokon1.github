@@ -8,7 +8,7 @@ html{
 }
 .container{
     margin: 0 auto;
-    padding: 1%;
+    padding: 0 1% 1% 0;
     width: 100vw;
 }
 header, nav, main, section, footer{
@@ -153,14 +153,24 @@ section{
         font-size: 0.8rem;
     }
 }
-.oneFour{
-    height: 15vh;
+.one{
+    width: 90vw;
+    height: 13vh;
+    margin-left: 5%;
+    padding: 2%;
+    border-top: 1px dashed white;
+}
+.oneThree{
     flex-grow: 1;
     width: 90vw;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 5%;
+    padding: 2%;
+    border-top: 1px dashed white;
+    img{
+        margin-top: 5%;
+    }
 }
-.left{
+/*.left{
     float: left;
     margin-left: 2vw;   
 }
@@ -168,7 +178,7 @@ section{
     margin-left: 25%;
     padding-left: 2%;
     border-left: 2px dotted grey;
-}
+}*/
 .codersLab{
     width: 200px;
     height: 60px;
@@ -199,15 +209,13 @@ section{
         height: 10%;
         width: 85vw;
         margin: 0 auto;
-        border-top: 2px dotted grey;
-        div{
-            margin-top: 50px;
-        }
     }
 }
 p.school{
-    padding-left: 100px;
+    margin-left: 20vw;
+    margin-top: 5vh;
     display: block;
+    border-bottom: 2px dotted grey;
 }
 .programming, .otherSkills {
     display: flex;
@@ -346,3 +354,10 @@ span.text-animation{
 }
 */
 //toDo: animation in other browsers!!!!!
+
+/* used in js */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
