@@ -10,6 +10,7 @@ html{
     margin: 0 auto;
     padding: 0 1% 1% 0;
     width: 100vw;
+    max-width: 1900px;
 }
 header, nav, main, section, footer{
     width: 100vw;
@@ -69,7 +70,7 @@ ul.hamburgerList{
 ul.menuList{
     display: none;
     height: 15vh;
-    width: 65vw;
+    //width: 65vw; removed due to media
     flex-grow: 1;
     margin-top: 10vh;
     li{
@@ -88,8 +89,9 @@ footer{
     font-size: 0.9rem;
 }
 .social-icons{
-    flex-grow: 1;
-    padding: 1%;
+    //flex-grow: 1;
+    width: 40vw;
+    padding: 2%;
     img.icons{
         display: inline-block;
         border-radius: 40%;
@@ -99,8 +101,11 @@ footer{
 }
 .inf-bottom{
     color: white;
-    padding: 3%;
+    padding: 2%;
+    position: absolute;
+    right: 10px;
     
+    //font-size: .8rem;
 }
 /* MAIN */
 section{
@@ -159,6 +164,11 @@ section{
     margin-left: 5%;
     padding: 2%;
     border-top: 1px dashed white;
+    span{
+        color: #22a389;
+        margin-top: 2%;
+        display: block;
+    }
 }
 .oneThree{
     flex-grow: 1;
@@ -167,7 +177,7 @@ section{
     padding: 2%;
     border-top: 1px dashed white;
     img{
-        margin-top: 5%;
+        margin-top: 2%;
     }
 }
 /*.left{
@@ -353,7 +363,9 @@ span.text-animation{
    @include loading_text_animation_mixin;
 }
 */
-//toDo: animation in other browsers!!!!!
+
+//toDo: 
+//- animation in other browsers!!!!!
 
 /* used in js */
 .sticky{
