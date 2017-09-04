@@ -17,30 +17,54 @@ $(function(){
 
     /* HAMBURGER */
     var hamburgerMenu = $('div.hamburgerMenu');
-    var hamburgerList = $('ul.hamburgerList')
+    var hamburgerList = $('ul.hamburgerList');
+    var hamburgerItem = $("div.hamburgerItem");
     
     hamburgerList.hide();
 
     hamburgerMenu.on('click', function(){
         hamburgerList.slideDown(500);
+        hamburgerItem.css("backgroundColor","#22a389");
+        hamburgerItem.first().css({
+            "transform-origin": "30% 30%",
+            "transform": "rotate(60deg)",
+            "transition-duration": "2s"
+        });
+        hamburgerItem.eq(1).css({
+            "transform": "rotate(-60deg)",
+            "transition-duration": "2s"
+        });
+        hamburgerItem.last().css("display","none"); 
     });
+    
    hamburgerList.on('click', function(){
-        $(this).delay(500).slideUp(500);
+       hamburgerItem.css("backgroundColor","grey");
+       hamburgerItem.first().css({
+           "transform": "rotate(0deg)",
+           "transition-duration": "2s"
+       });
+       hamburgerItem.eq(1).css({
+           "transform": "rotate(0deg)",
+           "transition-duration": "2s"
+       });
+       hamburgerItem.last().show(2000);
+       $(this).delay(2000).slideUp(500);
     });
+    
     
     /* SMOOTH SCROLLING */ 
     function scroll(){
        $('a[href^="#"]').on('click',function(event){ //!!!
-            var href = $(this).attr('href');
-            var desiredHeight = ($(window).height() * 0.15);
+           var href = $(this).attr('href');
+           var desiredHeight = ($(window).height() * 0.14);
             
            if(href.length) {
                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $('body').find(href).offset().top-desiredHeight
-                },1000);
-            }
-        });
+               $('html, body').animate({
+                   scrollTop: $('body').find(href).offset().top-desiredHeight
+               },1000);
+           }
+       });
     };
     scroll();
     
