@@ -7,8 +7,8 @@ html{
     font-size: 18px;
 }
 .container{
-    margin: 0 auto;
-    padding: 0 1% 1% 0;
+    //margin: 0 auto;
+    padding: 0 1% 0 0;
     width: 100vw;
     max-width: 1900px;
 }
@@ -42,7 +42,9 @@ header, nav{
     }
 }
 .hamburgerMenu{
-    height: 30px;
+   // height: 30px;
+    position: absolute;
+    right: 80px;
     .hamburgerItem{
         width: 70px;
         height: 10px;
@@ -91,7 +93,8 @@ footer{
 .social-icons{
     //flex-grow: 1;
     width: 40vw;
-    padding: 2%;
+    padding: 5px 10px;
+    margin: 0;
     img.icons{
         display: inline-block;
         border-radius: 40%;
@@ -101,10 +104,10 @@ footer{
 }
 .inf-bottom{
     color: white;
-    padding: 2%;
+    padding: 5px 10px;
     position: absolute;
     right: 10px;
-    
+    margin: 0;
     //font-size: .8rem;
 }
 /* MAIN */
@@ -371,5 +374,4 @@ span.text-animation{
 .sticky{
     position: fixed;
     top: 0;
-    left: 0;
 }
