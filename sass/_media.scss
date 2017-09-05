@@ -1,0 +1,39 @@
+/* media queries -mobile first */
+
+@mixin tablet(){
+    @media screen and #{$tablet}{
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media screen and #{$desktop}{
+        @content;
+    }
+}
+
+@mixin bigDesktop(){
+    @media screen and #{$bigDesktop}{
+        @content;
+    }
+}
+
+@mixin maxDesktop(){
+    @media screen and #{$maxDesktop}{
+        @content;
+    }
+}
+
+/* orientation and max height */
+
+@mixin landscape(){
+    @media screen and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin maxHeight(){
+    @media screen and (max-height:400px){
+        @content;
+    }
+}
