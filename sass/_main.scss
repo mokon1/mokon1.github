@@ -392,3 +392,28 @@ span.text-animation{
     position: fixed;
     top: 0;
 }
+
+/* typewriter effect*/
+.typewriterContainer{
+    display: inline-block;
+}
+.typewriter{
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 3px;
+    border-right: 1px solid transparent;
+    animation: type 3s steps(26), blink 1s step-end infinite;
+}
+@keyframes type{
+   from{
+       width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: blue; 
+    }
+}
