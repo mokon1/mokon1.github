@@ -1,13 +1,18 @@
 var container = $('.container');
+var sound = $('audio')[0];
 container.css('display','none');
 
 $(window).on('load', function() {
     setTimeout(function(){ //user can see loading sign
         $('.loader').fadeOut('5000');
         container.fadeIn('3000');
+        sound.play();
     },1000)
 });
 
+setTimeout(function(){
+    sound.pause();
+},4000); //it should lasts 3s, so I added 1s from previous setTimeout
 
 var header = $('header');
 var menu = $('nav.menu');
