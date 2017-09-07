@@ -402,9 +402,9 @@ span.text-animation{
     overflow: hidden;
     padding-right: 3px;
     border-right: 1px solid transparent;
-    animation: type 3s steps(26), blink 1s step-end infinite;
+    animation: typewriter_animation 3s steps(26), blink 1s step-end infinite;
 }
-@keyframes type{
+@keyframes typewriter_animation{
    from{
        width: 0;
     }
@@ -415,5 +415,24 @@ span.text-animation{
 @keyframes blink{
     50%{
         border-color: blue; 
+    }
+}
+
+/* loading sign*/
+.loader{
+    border: 2px dashed blue;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 45vw;
+    top: 45vh;
+    border-radius: 50%;
+    animation: loader_animation 2s linear infinite;
+}
+@keyframes loader_animation{
+    from{
+         transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
     }
 }
