@@ -1,3 +1,4 @@
+/* LOADING */
 var container = $('.container');
 var sound = $('audio')[0];
 container.css('display','none');
@@ -12,8 +13,10 @@ $(window).on('load', function() {
 
 setTimeout(function(){
     sound.pause();
-},4000); //it should lasts 3s, so I added 1s from previous setTimeout
+},4000); //it should last 3s, so I added 1s from previous setTimeout
 
+
+/* MENU */ 
 var header = $('header');
 var menu = $('nav.menu');
 var headerPosition = header.offset().top;
@@ -64,6 +67,8 @@ hamburgerList.on('click', function(){
    $(this).delay(2000).slideUp(500);
 });
 
+
+/* SCROLLING */ 
 function scroll(){
    $('a[href^="#"]').on('click',function(event){
        var href = $(this).attr('href');
