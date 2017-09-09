@@ -1,0 +1,206 @@
+/* media queries -mobile first */
+/* orientation and max height */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; }
+
+@media screen and (min-width: 768px) { html { font-size: 24px; } }
+
+@media screen and (min-width: 1024px) { html { font-size: 28px; } }
+
+@media screen and (max-height: 400px) { html { font-size: 15px; } }
+
+.container { padding: 0 1% 0 0; width: 100vw; max-width: 1900px; }
+
+header, nav, main, section, footer { width: 100vw; margin: 0 auto; }
+
+header, nav { height: 15vh; background-color: white; position: relative; z-index: 8; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-line-pack: center; align-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* HEADER */
+.author { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; padding: 1%; margin-left: 5%; display: inline-block; width: 30vw; }
+
+.author .largeText { font-size: 1.5rem; font-weight: bold; color: #22a389; margin-top: 2%; margin-bottom: 0; }
+
+.hamburgerMenu { position: absolute; right: 80px; }
+
+@media screen and (min-width: 768px) { .hamburgerMenu { display: none; } }
+
+.hamburgerMenu .hamburgerItem { width: 70px; height: 10px; border: 2px solid black; background-color: grey; border-radius: 10%; margin: 2px; display: block; }
+
+ul.hamburgerList { display: block; margin-top: 20px; margin-right: 5px; font-weight: 900; }
+
+@media screen and (min-width: 768px) { ul.hamburgerList { display: none; } }
+
+ul.hamburgerList li { display: block; margin-left: 8%; font-size: 0.8rem; }
+
+ul.hamburgerList li a { text-decoration: none; color: orangered; }
+
+ul.menuList { display: none; height: 15vh; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin-top: 10vh; }
+
+@media screen and (min-width: 768px) { ul.menuList { display: block; } }
+
+ul.menuList li { display: inline-block; margin-left: 5%; }
+
+ul.menuList li a { text-decoration: none; color: black; }
+
+/* FOOTER */
+footer { background-color: black; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 0.9rem; }
+
+.social-icons { width: 40vw; padding: 5px 10px; margin: 0; }
+
+.social-icons img.icons { display: inline-block; border-radius: 40%; width: 30px; height: 30px; }
+
+@media screen and (max-height: 400px) { .social-icons img.icons { width: 20px; height: 20px; } }
+
+@media screen and (max-height: 400px) { .social-icons { padding: 0px 10px; } }
+
+.inf-bottom { color: white; padding: 5px 10px; position: absolute; right: 10px; margin: 0; }
+
+/* MAIN */
+section { height: 85vh; border-top: 2px dotted grey; border-bottom: 2px dotted grey; }
+
+/* INFORMATION */
+.section-information { width: 100vw; background-image: url(../pictures/working.jpg); opacity: 0.9; background-size: cover; background-repeat: no-repeat; }
+
+.section-information .author-text { margin-top: 40vh; padding: 5vh 15vw; text-align: center; background: rgba(255, 255, 255, 0.3); }
+
+.section-information .author-text p { background-color: #22a389; -webkit-box-shadow: -10px -10px 25px #795548; box-shadow: -10px -10px 25px #795548; border-radius: 1em; color: white; padding: 5px; }
+
+/* EDUCATION */
+.section-edu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; color: white; background-color: black; }
+
+.section-edu p { font-size: 0.8rem; }
+
+@media screen and (min-width: 1024px) { .section-edu p { display: inline-block; } }
+
+@media screen and (orientation: landscape) { .section-edu p { display: inline-block; } }
+
+@media screen and (min-width: 1024px) { .section-edu img { display: inline-block; margin-left: 10%; } }
+
+@media screen and (orientation: landscape) { .section-edu img { display: inline-block; margin-left: 10%; } }
+
+.one { width: 70vw; height: 13vh; margin: 0 auto; padding: 2% 0; border-top: 1px dashed white; }
+
+.one span { color: #22a389; margin-top: 2%; display: block; }
+
+@media screen and (min-width: 1024px) { .one span { margin-top: 0; } }
+
+@media screen and (orientation: landscape) { .one span { margin-top: 0; } }
+
+.oneThree { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; width: 70vw; margin: 0 auto; padding: 2%; border-top: 1px dashed white; }
+
+@media screen and (orientation: landscape) { .oneThree { padding: 0.5%; } }
+
+.oneThree img { margin-top: 2%; }
+
+.codersLab { width: 200px; height: 60px; margin-left: 10%; }
+
+@media screen and (min-width: 1024px) { .codersLab { width: 250px; height: 70px; } }
+
+@media screen and (max-height: 400px) { .codersLab { width: 150px; height: 40px; } }
+
+.pwr, .ue { height: 60px; width: 50px; margin-left: 30%; }
+
+@media screen and (min-width: 768px) { .pwr, .ue { height: 70px; } }
+
+@media screen and (min-width: 1024px) { .pwr, .ue { height: 90px; width: 60px; } }
+
+@media screen and (max-height: 400px) { .pwr, .ue { height: 50px; width: 35px; } }
+
+/* SKILLS */
+.section-skills { background-image: url(../pictures/screen.png); background-size: cover; padding: 3%; }
+
+@media screen and (orientation: landscape) { .section-skills { padding: 0; } }
+
+.section-skills .text { padding-left: 20%; margin-top: 5%; color: black; }
+
+.section-skills .programming { height: 50%; width: 70vw; margin: 0 auto; }
+
+.section-skills .otherSkills { height: 10%; width: 70vw; margin: 0 auto; }
+
+p.school { margin-left: 20vw; margin-top: 7vh; display: block; border-bottom: 2px dotted grey; }
+
+.programming, .otherSkills { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.programming div, .otherSkills div { width: 80px; height: 80px; border: 2px solid black; background-color: #22a389; color: white; border-radius: 50%; font-weight: bold; font-size: 15px; text-align: center; margin: 1%; -webkit-animation: moveSkills 3s infinite alternate; animation: moveSkills 3s infinite alternate; }
+
+@media screen and (min-width: 1024px) { .programming div, .otherSkills div { width: 100px; height: 100px; font-size: 20px; } }
+
+@media screen and (min-width: 1400px) { .programming div, .otherSkills div { width: 120px; height: 120px; font-size: 23px; } }
+
+@media screen and (min-width: 1600px) { .programming div, .otherSkills div { width: 150px; height: 150px; font-size: 25px; } }
+
+@media screen and (max-height: 400px) { .programming div, .otherSkills div { width: 70px; height: 70px; font-size: 12px; } }
+
+.programming div p, .otherSkills div p { margin-top: 35%; }
+
+@-webkit-keyframes moveSkills { 0% { -webkit-transform: rotate(20deg); transform: rotate(20deg);
+    background-color: #22a389; }
+  100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg);
+    background-color: grey; } }
+
+@keyframes moveSkills { 0% { -webkit-transform: rotate(20deg); transform: rotate(20deg);
+    background-color: #22a389; }
+  100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg);
+    background-color: grey; } }
+
+/* CONTACT */
+.section-contact { width: 100vw; height: 80vh; background-image: url(../pictures/contact.jpg); background-repeat: no-repeat; background-size: cover; opacity: 0.9; }
+
+.contact-container { width: 70%; margin: 0 auto; margin-top: 30vh; font-weight: bold; color: white; }
+
+.mail, .telephon { font-size: 1.5rem; }
+
+span.text-animation:first-child { -webkit-animation: loading_text_animation 2s 0s infinite alternate; animation: loading_text_animation 2s 0s infinite alternate; }
+
+span.text-animation:nth-child(2) { -webkit-animation: loading_text_animation 2s 0.4s infinite alternate; animation: loading_text_animation 2s 0.4s infinite alternate; }
+
+span.text-animation:nth-child(3) { -webkit-animation: loading_text_animation 2s 0.8s infinite alternate; animation: loading_text_animation 2s 0.8s infinite alternate; }
+
+span.text-animation:nth-child(4) { -webkit-animation: loading_text_animation 2s 1.2s infinite alternate; animation: loading_text_animation 2s 1.2s infinite alternate; }
+
+span.text-animation:nth-child(5) { -webkit-animation: loading_text_animation 2s 1.6s infinite alternate; animation: loading_text_animation 2s 1.6s infinite alternate; }
+
+span.text-animation:nth-child(6) { -webkit-animation: loading_text_animation 2s 2s infinite alternate; animation: loading_text_animation 2s 2s infinite alternate; }
+
+span.text-animation:nth-child(7) { -webkit-animation: loading_text_animation 2s 2.4s infinite alternate; animation: loading_text_animation 2s 2.4s infinite alternate; }
+
+@-webkit-keyframes loading_text_animation { 0% { opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
+  100% { opacity: 0; } }
+
+@keyframes loading_text_animation { 0% { opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
+  100% { opacity: 0; } }
+
+/* used in js */
+.sticky { position: fixed; top: 0; }
+
+/* typewriter effect*/
+.typewriterContainer { display: inline-block; }
+
+.typewriter { white-space: nowrap; overflow: hidden; padding-right: 3px; border-right: 1px solid transparent; -webkit-animation: typewriter_animation 3s steps(26), blink 1s step-end infinite; animation: typewriter_animation 3s steps(26), blink 1s step-end infinite; }
+
+@-webkit-keyframes typewriter_animation { from { width: 0; }
+  to { width: 100%; } }
+
+@keyframes typewriter_animation { from { width: 0; }
+  to { width: 100%; } }
+
+@-webkit-keyframes blink { 50% { border-color: blue; } }
+
+@keyframes blink { 50% { border-color: blue; } }
+
+/* loading sign*/
+.loader { border: 2px dashed blue; height: 50px; width: 50px; position: absolute; left: 45vw; top: 45vh; border-radius: 50%; -webkit-animation: loader_animation 2s linear infinite; animation: loader_animation 2s linear infinite; }
+
+@-webkit-keyframes loader_animation { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes loader_animation { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+/* media queries -mobile first */
+/* orientation and max height */
