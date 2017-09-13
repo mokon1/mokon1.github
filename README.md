@@ -1,13 +1,11 @@
 # My website.
-## Site:
-https://mokon1.github.io/
+## Site: https://mokon1.github.io/
 
 ### Technologies:
 - HTML
 - SASS
 - jQuery
-
-and built with Gulp.js.
+- and built with Gulp.js.
 
 ### Features:
 - sticky menu
@@ -19,7 +17,7 @@ and built with Gulp.js.
 - sound- typewriter effects
 
 
-#### Few screenshots
+### Few screenshots
 
 - **hamburger menu** <br />
 ![hamburger menu](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/hamburgerMenu.jpg)
@@ -28,4 +26,4 @@ and built with Gulp.js.
 ![typewriter effect](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/typewriterEffect.jpg)
 
 - **loading sign** <br />
-![typewriter effect](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/loadingSign.jpg)
+![loading sign](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/loadingSing.jpg)
