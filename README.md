@@ -17,7 +17,7 @@
 - sound- typewriter effects
 
 
-### Few screenshots
+### Few screenshots:
 
 - **hamburger menu** <br />
 ![hamburger menu](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/hamburgerMenu.jpg)
@@ -26,4 +26,4 @@
 ![typewriter effect](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/typewriterEffect.jpg)
 
 - **loading sign** <br />
-![loading sign](https://raw.githubusercontent.com/mokon1/mokon1.github/62a390a3bf4bef83be20e39fb57762e12e4c273c/picturesReadme/loadingSing.jpg)
+![loading sign](https://raw.githubusercontent.com/mokon1/mokon1.github.io/master/picturesReadme/loadingSign.jpg)
