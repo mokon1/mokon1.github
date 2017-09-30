@@ -1,10 +1,11 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const babel = require("gulp-babel");
 
 /* sass */
-gulp.task('sass', function() {
+gulp.task('sass', () => {
     return gulp.src('index.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -16,18 +17,27 @@ gulp.task('sass', function() {
 });
 
 /* watch */
-gulp.task('watch', function(){
+gulp.task('watch', () => {
     //gulp.watch('sass/**/*.scss', ['sass']);
     gulp.watch('index.scss', ['sass']);
     gulp.watch('.scss', ['sass']);
 });
 
 /* autoprefix */ 
-gulp.task('prefix', function(){ //name in console
-    gulp.src('css/index.css') //source
+gulp.task('prefix', () => {
+    gulp.src('css/index.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('css')) //folder where is created new file
+        .pipe(gulp.dest('css'))
+});
+
+/* babel */ 
+gulp.task('babel', () => {
+	gulp.src('js/app.js')
+		.pipe(babel({
+			presets: ['env']
+		}))
+		.pipe(gulp.dest('dist'))
 });

@@ -5,7 +5,7 @@
 - HTML
 - SASS
 - jQuery
-- and built with Gulp.js.
+- and built with gulp.js (sass, autoprefix, babel).
 
 ### Features:
 - sticky menu

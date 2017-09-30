@@ -1,39 +1,45 @@
+'use strict';
+
 /* LOADING */
-const container = $('.container');
-const sound = $('audio')[0];
-const startSound= () => sound.pause();
-const openPage = () =>{
-    $('.loader').fadeOut('5000');  //user can see loading sign
+var container = $('.container');
+var sound = $('audio')[0];
+var startSound = function startSound() {
+    return sound.pause();
+};
+var openPage = function openPage() {
+    $('.loader').fadeOut('5000'); //user can see loading sign
     container.fadeIn('3000');
     sound.play();
-}
+};
 
-container.css('display','none');
-$(window).on('load', () => setTimeout(openPage, 1000));
+container.css('display', 'none');
+$(window).on('load', function () {
+    return setTimeout(openPage, 1000);
+});
 setTimeout(startSound, 4000); //it should last 3s, so I added 1s from previous setTimeout
 
 
-/* MENU */ 
-const header = $('header');
-const menu = $('nav.menu');
-let headerPosition = header.offset().top;
-const hamburgerMenu = $('div.hamburgerMenu');
-const hamburgerList = $('ul.hamburgerList');
-const hamburgerItem = $("div.hamburgerItem");
+/* MENU */
+var header = $('header');
+var menu = $('nav.menu');
+var headerPosition = header.offset().top;
+var hamburgerMenu = $('div.hamburgerMenu');
+var hamburgerList = $('ul.hamburgerList');
+var hamburgerItem = $("div.hamburgerItem");
 
-let scrollFunction = ()=>{
-    let scrollDocument = $(document).scrollTop();
-        
-    if (scrollDocument>=headerPosition){
+var scrollFunction = function scrollFunction() {
+    var scrollDocument = $(document).scrollTop();
+
+    if (scrollDocument >= headerPosition) {
         menu.addClass('sticky');
-    }else{
+    } else {
         menu.removeClass('sticky');
     }
-}
+};
 
-let hamburgerFunction = () => {
+var hamburgerFunction = function hamburgerFunction() {
     hamburgerList.slideDown(500);
-    hamburgerItem.css("backgroundColor","#22a389");
+    hamburgerItem.css("backgroundColor", "#22a389");
     hamburgerItem.first().css({
         "transform-origin": "30% 30%",
         "transform": "rotate(60deg)",
@@ -43,21 +49,21 @@ let hamburgerFunction = () => {
         "transform": "rotate(-60deg)",
         "transition-duration": "2s"
     });
-    hamburgerItem.last().css("display","none"); 
-}
+    hamburgerItem.last().css("display", "none");
+};
 
-let hamburgerListFunction = () => {
-   hamburgerItem.css("backgroundColor","grey");
-   hamburgerItem.first().css({
-       "transform": "rotate(0deg)",
-       "transition-duration": "2s"
-   });
-   hamburgerItem.eq(1).css({
-       "transform": "rotate(0deg)",
-       "transition-duration": "2s"
-   });
-   hamburgerItem.last().show(2000);
-   hamburgerList.delay(2000).slideUp(500);
+var hamburgerListFunction = function hamburgerListFunction() {
+    hamburgerItem.css("backgroundColor", "grey");
+    hamburgerItem.first().css({
+        "transform": "rotate(0deg)",
+        "transition-duration": "2s"
+    });
+    hamburgerItem.eq(1).css({
+        "transform": "rotate(0deg)",
+        "transition-duration": "2s"
+    });
+    hamburgerItem.last().show(2000);
+    hamburgerList.delay(2000).slideUp(500);
 };
 
 hamburgerList.hide();
@@ -65,26 +71,23 @@ $(window).on('scroll', scrollFunction);
 hamburgerMenu.on('click', hamburgerFunction);
 hamburgerList.on('click', hamburgerListFunction);
 
+/* SCROLLING */
+var scroll = function scroll() {
+    $('a[href^="#"]').on('click', function (event) {
+        var href = $(this).attr('href');
+        var desiredHeight = $(window).height() * 0.14;
 
-
-/* SCROLLING */ 
-let scroll = () =>{
-   $('a[href^="#"]').on('click',function(event){
-       let href = $(this).attr('href');
-       let desiredHeight = ($(window).height() * 0.14);
-        
-       if(href.length) {
-           event.preventDefault();
-           $('html, body').animate({
-               scrollTop: $('body').find(href).offset().top-desiredHeight
-           },1000);
-       }
-   });
+        if (href.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('body').find(href).offset().top - desiredHeight
+            }, 1000);
+        }
+    });
 };
 scroll();
 
-//document.cookie = "username=Mokon";
-
+document.cookie = "username=Mokon";
 
 /*
  Before:
